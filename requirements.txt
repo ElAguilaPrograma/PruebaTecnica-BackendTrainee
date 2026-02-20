@@ -1,0 +1,5 @@
+fastapi[standard]
+sqlalchemy
+pandas
+httpx
+python-dotenv
