@@ -1,7 +1,5 @@
 # Prueba Tecnica - Backend Trainee
 
-API desarrollada con **FastAPI** que permite realizar la conciliación de pagos por lote (**batch**) y descargar el resultado en un archivo.
-
 # Instalación
 
 ## 1. Clonar el repositorio
