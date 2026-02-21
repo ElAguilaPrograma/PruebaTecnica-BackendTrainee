@@ -9,8 +9,6 @@ from sqlalchemy.orm import Session
 from database import SessionLocal, engine, Base
 import os
 from dotenv import load_dotenv
-from google import genai
-from google.genai import errors as genai_errors
 
 load_dotenv()
 

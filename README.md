@@ -5,8 +5,8 @@
 ## 1. Clonar el repositorio
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
-cd <NOMBRE_DEL_PROYECTO>
+git clone https://github.com/ElAguilaPrograma/PruebaTecnica-BackendTrainee.git
+cd PruebaTecnica-BackendTrainee
 ```
 
 ---
@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 # Configuración
 
-Este proyecto requiere una **API KEY** de ExchangeRate API.
+Esta prueba requiere una **API KEY** de ExchangeRate API.
 
 ## 1. Obtener API KEY
 
@@ -69,7 +69,7 @@ a:
 .env
 ```
 
-Editar el archivo y agregar:
+Editar el archivo y poner su API KEY:
 
 ```env
 API_KEY=tu_api_key_aqui
@@ -139,5 +139,5 @@ Download file
 
 # Ejemplo de batches
 
-Recomiendo usar TC-202403 para probar la API, ya que contiene ejemplos con todos los estatus pero los otros batch tambien funcionan sin problemas.
+Recomiendo usar TC-202403 para probar el Endpoint, ya que contiene ejemplos con todos los estatus pero los otros batch tambien funcionan sin problemas.
 
