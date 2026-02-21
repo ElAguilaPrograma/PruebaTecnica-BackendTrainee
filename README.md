@@ -6,6 +6,9 @@
 
 ```bash
 git clone https://github.com/ElAguilaPrograma/PruebaTecnica-BackendTrainee.git
+```
+
+```bash
 cd PruebaTecnica-BackendTrainee
 ```
 
