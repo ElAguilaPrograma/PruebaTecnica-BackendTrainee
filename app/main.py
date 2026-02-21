@@ -4,15 +4,18 @@ from fastapi import Query
 import httpx
 import seed_db
 from fastapi import FastAPI, Depends, HTTPException, Response
+from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from database import SessionLocal, engine, Base
 import os
 from dotenv import load_dotenv
+from google import genai
+from google.genai import errors as genai_errors
 
 load_dotenv()
 
 API_KEY = os.getenv("API_KEY")
-BASE_URL = os.getenv("BASE_URL")
+BASE_URL = f"https://v6.exchangerate-api.com/v6/{API_KEY}/latest/USD"
 
 Base.metadata.create_all(bind=engine)
 
@@ -74,8 +77,4 @@ async def reconciliation(batch: str, db: Session = Depends(get_db)):
         media_type="text/csv",
         headers={"Content-Disposition": f"attachment; filename=reconciliation_{batch}.csv"}
     )
-    
-
-
-
 
